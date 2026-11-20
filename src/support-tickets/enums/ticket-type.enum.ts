@@ -1,0 +1,11 @@
+export enum TicketType {
+  ORDER = 'ORDER',
+  PAYMENT = 'PAYMENT',
+  DELIVERY = 'DELIVERY',
+  RETURN = 'RETURN',
+  REFUND = 'REFUND',
+  ACCOUNT = 'ACCOUNT',
+  PRODUCT = 'PRODUCT',
+  TECHNICAL = 'TECHNICAL',
+  OTHER = 'OTHER',
+}

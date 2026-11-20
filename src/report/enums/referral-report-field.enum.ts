@@ -1,0 +1,9 @@
+export enum ReferralReportFieldEnum {
+  ID = 'ID',
+  REFERRER_ID = 'REFERRER_ID',
+  REFEREE_ID = 'REFEREE_ID',
+  STATUS = 'STATUS',
+  ORDER_ID = 'ORDER_ID',
+  POINTS_AWARDED = 'POINTS_AWARDED',
+  CREATED_AT = 'CREATED_AT',
+}

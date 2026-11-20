@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.env
+.env.*
+coverage
+uploads
+public
+*.md
+test
+.vscode
+.kilo

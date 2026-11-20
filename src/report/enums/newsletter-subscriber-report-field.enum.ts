@@ -1,0 +1,10 @@
+export enum NewsletterSubscriberReportFieldEnum {
+  ID = 'ID',
+  EMAIL = 'EMAIL',
+  CUSTOMER_ID = 'CUSTOMER_ID',
+  SOURCE = 'SOURCE',
+  STATUS = 'STATUS',
+  SUBSCRIBED_AT = 'SUBSCRIBED_AT',
+  UNSUBSCRIBED_AT = 'UNSUBSCRIBED_AT',
+  CREATED_AT = 'CREATED_AT',
+}

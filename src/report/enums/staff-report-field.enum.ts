@@ -1,0 +1,9 @@
+export enum StaffReportFieldEnum {
+  EMAIL = 'EMAIL',
+  ROLE = 'ROLE',
+  IS_ACTIVE = 'IS_ACTIVE',
+  NAME = 'NAME',
+  DESIGNATION = 'DESIGNATION',
+  PHONE_NUMBER = 'PHONE_NUMBER',
+  CREATED_AT = 'CREATED_AT',
+}

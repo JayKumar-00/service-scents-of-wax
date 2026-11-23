@@ -9,11 +9,11 @@ export class RefferalTemplate {
   }) {
     return EmailTemplateBuilder.build({
       type: NotificationEmailEnum.REFFERAL,
-      title: "You've Been Invited to UnBoxIO!",
+      title: "You've Been Invited to ScentsOfWax!",
       body: `
         <p style="margin: 0 0 16px;">Hello,</p>
         <p style="margin: 0 0 18px; line-height: 1.6;">
-          Your colleague or friend <strong>${params.referrerEmail}</strong> has invited you to join <strong>UnBoxIO</strong>, the leading platform for corporate gifting and custom merchandise.
+          Your colleague or friend <strong>${params.referrerEmail}</strong> has invited you to join <strong>ScentsOfWax</strong>, the leading platform for corporate gifting and custom merchandise.
         </p>
         <p style="margin: 0 0 18px; line-height: 1.6;">
           By registering, you'll gain access to curated gift collections, automated custom branding, and exclusive loyalty rewards. Use the referral code below during signup to claim your welcome benefits:

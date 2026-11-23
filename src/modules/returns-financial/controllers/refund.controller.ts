@@ -200,7 +200,7 @@ export class RefundController {
           <strong>Total Refunded: ₹${receipt.grandTotal ? Number(receipt.grandTotal).toFixed(2) : '0.00'}</strong>
         </div>
         <div class="footer">
-          <p>Thank you for shopping with UnBoxIO.</p>
+          <p>Thank you for shopping with ScentsOfWax.</p>
         </div>
       </body>
       </html>

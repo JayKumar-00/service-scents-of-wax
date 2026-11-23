@@ -223,7 +223,7 @@ export class InvoiceService {
   private pickupAddressFromStockRequest(): InvoiceAddressSnapshot {
     return this.buildAddressSnapshot(
       {
-        fullName: 'UnBoxIO Central Hub',
+        fullName: 'ScentsOfWax Central Hub',
         addressLine1: 'CENTRAL-HUB',
         city: 'Bilaspur',
         state: 'Chhattisgarh',

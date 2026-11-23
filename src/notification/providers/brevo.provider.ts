@@ -25,10 +25,10 @@ export class BrevoProvider {
       this.configService.get<string>('BREVO_SENDER_EMAIL') || '';
 
     this.senderName =
-      this.configService.get<string>('BREVO_SENDER_NAME') || 'UnBoxIO';
+      this.configService.get<string>('BREVO_SENDER_NAME') || 'ScentsOfWax';
 
     this.smsSender =
-      this.configService.get<string>('BREVO_SMS_SENDER') || 'UnBoxIO-E';
+      this.configService.get<string>('BREVO_SMS_SENDER') || 'ScentsOfWax-E';
 
     this.initializeBrevo();
   }

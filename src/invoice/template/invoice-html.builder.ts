@@ -107,8 +107,8 @@ export class InvoiceHtmlBuilder {
     );
 
     // 1. Gather Seller/Company Information (Pickup Address represents Seller for stock requests or platform)
-    const sellerName = this.escape(invoice.storeName || 'UnBoxIO');
-    const rawSellerName = invoice.storeName || 'UnBoxIO';
+    const sellerName = this.escape(invoice.storeName || 'ScentsOfWax');
+    const rawSellerName = invoice.storeName || 'ScentsOfWax';
     const initials =
       rawSellerName
         .split(/\s+/)
@@ -123,7 +123,7 @@ export class InvoiceHtmlBuilder {
     const sellerHeaderHtml = logoData
       ? `
         <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 5px;">
-          <img class="company-logo" src="data:image/png;base64,${logoData}" alt="UnBoxIO Logo" style="width: 420px; max-width: 100%; height: auto; max-height: 130px; object-fit: contain; object-position: left; display: block;">
+          <img class="company-logo" src="data:image/png;base64,${logoData}" alt="ScentsOfWax Logo" style="width: 420px; max-width: 100%; height: auto; max-height: 130px; object-fit: contain; object-position: left; display: block;">
         </div>
       `
       : `
@@ -975,7 +975,7 @@ export class InvoiceHtmlBuilder {
 
     <!-- Footer block -->
     <div class="footer-notes">
-      <p>Whether you're shopping for yourself or sending a gift, thank you for choosing <strong>UnBoxIO</strong>!</p>
+      <p>Whether you're shopping for yourself or sending a gift, thank you for choosing <strong>ScentsOfWax</strong>!</p>
       <p style="font-size: 11px; color: #94a3b8; margin-top: 10px;">This is a computer-generated tax invoice. No signature is required.</p>
     </div>
   </div>

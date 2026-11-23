@@ -1699,7 +1699,7 @@ export class DeliveriesService {
         deliveryId,
         stockRequestId,
         franchise,
-        platformName: this.configService.get('PLATFORM_NAME', 'UnBoxIO'),
+        platformName: this.configService.get('PLATFORM_NAME', 'ScentsOfWax'),
         productName,
         variantName,
         quantity,

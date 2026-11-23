@@ -123,7 +123,7 @@ async function bootstrap() {
 
   // START SWAGGER SETUP
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('UnBoxIO (FBS) API')
+    .setTitle('ScentsOfWax (FBS) API')
     .setDescription('Swagger docs for all module only')
     .setVersion('1.0')
     .addBearerAuth(
@@ -201,7 +201,7 @@ async function bootstrap() {
   const port = Number(process.env.PORT ?? 3000);
   await app.listen(port, host);
   console.log(
-    `UnBoxIO API listening on http://${host}:${port}/api/v1/health (metrics: /api/v1/metrics)`,
+    `ScentsOfWax API listening on http://${host}:${port}/api/v1/health (metrics: /api/v1/metrics)`,
   );
 }
 bootstrap();

@@ -382,7 +382,14 @@ export class ProductsService {
     }
 
     const normalizedCategoryId = dto.categoryId?.trim();
-    const normalizedBrandId = dto.brandId?.trim() || undefined;
+    const rawBrandId = dto.brandId ?? (dto as any).brand;
+    const normalizedBrandId =
+      typeof rawBrandId === 'string' &&
+      rawBrandId.trim() !== '' &&
+      rawBrandId.trim().toLowerCase() !== 'null' &&
+      rawBrandId.trim().toLowerCase() !== 'undefined'
+        ? rawBrandId.trim()
+        : undefined;
 
     const category = await this.prisma.category.findUnique({
       where: { id: normalizedCategoryId },
@@ -421,7 +428,7 @@ export class ProductsService {
             ? undefined
             : (dto.gstTax ?? 18),
         categoryId: normalizedCategoryId,
-        brandId: normalizedBrandId,
+        brandId: normalizedBrandId ?? null,
         basePrice:
           dto.basePrice != null && !dto.variants?.length
             ? new Prisma.Decimal(dto.basePrice)
@@ -597,7 +604,12 @@ export class ProductsService {
           description: dto.description,
           features: dto.features ?? [],
           categoryId: dto.categoryId,
-          brandId: dto.brandId,
+          brandId:
+            (dto.brandId ?? (dto as any).brand)?.trim() &&
+            (dto.brandId ?? (dto as any).brand)?.trim().toLowerCase() !== 'null' &&
+            (dto.brandId ?? (dto as any).brand)?.trim().toLowerCase() !== 'undefined'
+              ? (dto.brandId ?? (dto as any).brand).trim()
+              : null,
           price: new Prisma.Decimal(effectivePrice ?? dto.price ?? 0),
           mrpPrice:
             effectiveMrpPrice != null

@@ -12,7 +12,7 @@ export class OtpTemplate {
       body: `
         <p style="margin: 0 0 16px;">Hello,</p>
         <p style="margin: 0 0 16px; line-height: 1.6;">
-          You requested a verification code to access your <strong>${process.env.PLATFORM_NAME || 'UnBoxIO'}</strong> account. Please use the One-Time Password (OTP) below to complete your verification:
+          You requested a verification code to access your <strong>${process.env.PLATFORM_NAME || 'ScentsOfWax'}</strong> account. Please use the One-Time Password (OTP) below to complete your verification:
         </p>
 
         ${OtpBoxPartial.render(params.otp, validMinutes, '#4f46e5')}
@@ -22,7 +22,7 @@ export class OtpTemplate {
         </p>
         <p style="margin: 24px 0 0; line-height: 1.5;">
           Best regards,<br>
-          <strong>The ${process.env.PLATFORM_NAME || 'UnBoxIO'} Team</strong>
+          <strong>The ${process.env.PLATFORM_NAME || 'ScentsOfWax'} Team</strong>
         </p>
       `,
     });

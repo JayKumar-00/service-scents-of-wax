@@ -41,7 +41,7 @@ export class BrevoService {
         ...(replyTo && {
           replyTo: {
             email: replyTo,
-            name: this.brevoProvider.getSenderName() || 'UnBoxIO',
+            name: this.brevoProvider.getSenderName() || 'ScentsOfWax',
           },
         }),
 

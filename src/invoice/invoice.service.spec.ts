@@ -239,7 +239,7 @@ describe('InvoiceService', () => {
         'INV-PLATFORM-1',
         user,
       );
-      expect(result.pickupAddress?.fullName).toBe('UnBoxIO Central Hub');
+      expect(result.pickupAddress?.fullName).toBe('ScentsOfWax Central Hub');
       expect(result.pickupAddress?.city).toBe('Bilaspur');
       expect(result.pickupAddress?.state).toBe('Chhattisgarh');
     });
@@ -297,7 +297,7 @@ describe('InvoiceService', () => {
         'INV-PLATFORM-2',
         user,
       );
-      expect(result.pickupAddress?.fullName).toBe('UnBoxIO Central Hub');
+      expect(result.pickupAddress?.fullName).toBe('ScentsOfWax Central Hub');
       expect(result.pickupAddress?.state).toBe('Chhattisgarh');
     });
 
@@ -422,7 +422,7 @@ describe('InvoiceService', () => {
         'INV-PLATFORM-3',
         user,
       );
-      expect(result.pickupAddress?.fullName).toBe('UnBoxIO Central Hub');
+      expect(result.pickupAddress?.fullName).toBe('ScentsOfWax Central Hub');
     });
 
     it('should fall back to parsing order.addressJson when addresses relation is empty', async () => {
@@ -571,7 +571,7 @@ describe('InvoiceService', () => {
         'INV-EXISTING-1',
         user,
       );
-      expect(result.pickupAddress?.fullName).toBe('UnBoxIO Central Hub');
+      expect(result.pickupAddress?.fullName).toBe('ScentsOfWax Central Hub');
       expect(result.pickupAddress?.state).toBe('Chhattisgarh');
       expect(result.shippingAddress?.addressLine1).toBe('123 Main St');
       expect(result.shippingAddress?.state).toBe('Chhattisgarh');

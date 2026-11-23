@@ -390,6 +390,8 @@ export class FaqService {
   async adminList(query: FaqQueryDto): Promise<FaqListResult> {
     const clauses: Prisma.FaqWhereInput[] = [];
 
+    clauses.push({ isDeleted: false });
+
     const searchFilter = this.buildSearchClause(query.search, [
       'question',
       'answer',

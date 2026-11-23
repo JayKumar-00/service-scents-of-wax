@@ -104,6 +104,15 @@ export class CreateProductDto {
   brandId?: string;
 
   @ApiPropertyOptional({
+    description: 'ID or name of the brand associated with the product (alias for brandId)',
+    example: '123e4567-e89b-12d3-a456-426614174001',
+  })
+  @Transform(({ value }) => value?.trim())
+  @IsOptional()
+  @IsString()
+  brand?: string;
+
+  @ApiPropertyOptional({
     description: 'Price of the product (Base Price)',
     example: 200.99,
   })

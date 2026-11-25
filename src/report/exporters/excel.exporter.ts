@@ -26,7 +26,7 @@ export class ExcelExporter {
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Author>${this.escape(generatedBy)}</Author>
   <Created>${nowStr}</Created>
-  <Company>UnBoxIO</Company>
+  <Company>Scents Of Wax</Company>
  </DocumentProperties>
  <Styles>
   <Style ss:ID="Default" ss:Name="Normal">

@@ -44,8 +44,8 @@ export class HeaderPartial {
     }
 
     const logoHtml = logoSrc
-      ? `<img src="${logoSrc}" alt="UnBoxIO Logo" style="height: 36px; max-height: 36px; width: auto; display: block;" />`
-      : `<span style="font-size: 20px; font-weight: 800; color: ${accentColor}; letter-spacing: -0.02em;">UnBoxIO</span>`;
+      ? `<img src="${logoSrc}" alt="ScentsOfWax Logo" style="height: 36px; max-height: 36px; width: auto; display: block;" />`
+      : `<span style="font-size: 20px; font-weight: 800; color: ${accentColor}; letter-spacing: -0.02em;">ScentsOfWax</span>`;
 
     return `
       <!-- Header Logo Row -->

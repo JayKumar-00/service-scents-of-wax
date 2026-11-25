@@ -623,7 +623,7 @@ export class OrderPaymentService {
         finalOrderId = order?.id || '';
       }
       const attachment = await this.getInvoicePdfAttachmentForOrder(orderNumber);
-      const title = `Order Confirmed ✓ - ${orderNumber} | ${this.configService.get('PLATFORM_NAME', 'UnBoxIO')}`;
+      const title = `Order Confirmed ✓ - ${orderNumber} | ${this.configService.get('PLATFORM_NAME', 'ScentsOfWax')}`;
       const body = `Your order ${orderNumber} has been confirmed. Amount Paid: ₹${amount.toFixed(2)}`;
       const htmlContent = this.getOrderConfirmationEmail(
         customerName,
@@ -713,11 +713,11 @@ export class OrderPaymentService {
   ): string {
     const platformName = this.configService.get(
       'PLATFORM_NAME',
-      'UnBoxIO',
+      'ScentsOfWax',
     );
     const supportEmail = this.configService.get(
       'SUPPORT_EMAIL',
-      'support@unboxio.com',
+      'support@scentsofwax.com',
     );
 
     const template = OrderConfimationTemplate.build({
@@ -740,7 +740,7 @@ export class OrderPaymentService {
   ): string {
     const platformName = this.configService.get(
       'PLATFORM_NAME',
-      'UnBoxIO',
+      'ScentsOfWax',
     );
 
     return PaymentFailureTemplate.build({

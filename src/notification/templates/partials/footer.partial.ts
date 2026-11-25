@@ -27,7 +27,7 @@ export class FooterPartial {
   }
 
   static render(params: { footerText?: string; accentColor?: string }) {
-    const platformName = process.env.PLATFORM_NAME || 'UnBoxIO';
+    const platformName = process.env.PLATFORM_NAME || 'ScentsOfWax';
     const year = new Date().getFullYear();
     const awsPrefix = process.env.AWS_PREFIX_URL;
     const defaultLogoUrl = awsPrefix

@@ -478,8 +478,8 @@ export class OrderStatusService {
       const customerName = order.customer?.name || order.retailCustomer?.name || 'Customer';
       if (!customerEmail) return;
 
-      const platformName = this.configService.get('PLATFORM_NAME', 'UnBoxIO');
-      const supportEmail = this.configService.get('SUPPORT_EMAIL', 'support@unboxio.com');
+      const platformName = this.configService.get('PLATFORM_NAME', 'ScentsOfWax');
+      const supportEmail = this.configService.get('SUPPORT_EMAIL', 'support@scentsofwax.com');
       const amount = order.total instanceof Prisma.Decimal ? Number(order.total.toFixed(2)) : Number(order.total);
 
       const template = OrderConfimationTemplate.build({
@@ -585,7 +585,7 @@ export class OrderStatusService {
 
       const platformName = this.configService.get(
         'PLATFORM_NAME',
-        'UnBoxIO',
+        'ScentsOfWax',
       );
       const amount =
         order.total instanceof Prisma.Decimal
@@ -599,7 +599,7 @@ export class OrderStatusService {
         orderNumber: order.orderNumber,
         supportEmail: this.configService.get(
           'SUPPORT_EMAIL',
-          'support@unboxio.com',
+          'support@scentsofwax.com',
         ),
         amount,
         title: 'Order Delivered ✓',

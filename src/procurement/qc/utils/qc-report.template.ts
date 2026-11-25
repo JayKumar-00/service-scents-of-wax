@@ -680,7 +680,7 @@ export function generateQcReportHtml(data: QcReportData): string {
               </svg>
             </div>
             <div>
-              <div class="brand-title">UnBoxIO<span></span></div>
+              <div class="brand-title">ScentsOfWax<span></span></div>
               <div class="brand-tagline">we box happiness</div>
             </div>
           </div>
@@ -734,7 +734,7 @@ export function generateQcReportHtml(data: QcReportData): string {
         </div>
         <div class="details-col" style="width: 33%;">
           <div class="col-title">SHIPPED TO (DELIVERY)</div>
-          <div class="entity-name">UnBoxIO Central Hub</div>
+          <div class="entity-name">ScentsOfWax Central Hub</div>
           <div class="entity-info">
             Phone: 7586585698<br>
             Bharti Nagar, Telipara, Chhattisgarh<br>
@@ -744,7 +744,7 @@ export function generateQcReportHtml(data: QcReportData): string {
         </div>
         <div class="details-col" style="width: 33%;">
           <div class="col-title">DISPATCHED FROM (SELLER PICKUP)</div>
-          <div class="entity-name">${escapeHtml(data.warehouseName || 'UnBoxIO Central Hub')}</div>
+          <div class="entity-name">${escapeHtml(data.warehouseName || 'ScentsOfWax Central Hub')}</div>
           <div class="entity-info">
             CENTRAL-HUB<br>
             Bilaspur, Chhattisgarh, 495001<br>
@@ -914,7 +914,7 @@ export function generateQcReportHtml(data: QcReportData): string {
 
     <!-- Footer Notes -->
     <div class="footer-notes">
-      <p style="margin: 0 0 2px 0; font-weight: 500;">Whether you're shopping for yourself or sending a gift, thank you for choosing <strong>UnBoxIO</strong>!</p>
+      <p style="margin: 0 0 2px 0; font-weight: 500;">Whether you're shopping for yourself or sending a gift, thank you for choosing <strong>Scents Of Wax</strong>!</p>
       <p style="margin: 0; color: #94a3b8; font-size: 9px;">This is a computer-generated quality control report. No physical signature is required.</p>
     </div>
   </div>

@@ -69,7 +69,7 @@ export class StockRequestPaymentTemplate {
         </p>
         <p style="margin: 24px 0 0; line-height: 1.5;">
           Best regards,<br>
-          <strong>The ${process.env.PLATFORM_NAME || 'UnBoxIO'} Team</strong>
+          <strong>The ${process.env.PLATFORM_NAME || 'ScentsOfWax'} Team</strong>
         </p>
       `,
     });
@@ -124,7 +124,7 @@ export class StockRequestStatusTemplate {
         </p>
         <p style="margin: 24px 0 0; line-height: 1.5;">
           Best regards,<br>
-          <strong>The ${process.env.PLATFORM_NAME || 'UnBoxIO'} Team</strong>
+          <strong>The ${process.env.PLATFORM_NAME || 'ScentsOfWax'} Team</strong>
         </p>
       `,
     });

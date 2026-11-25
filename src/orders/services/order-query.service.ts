@@ -377,7 +377,7 @@ export class OrderQueryService {
 <style>body{font-family:system-ui,sans-serif;max-width:720px;margin:24px auto;padding:16px;color:#111}
 h1{font-size:1.25rem}.muted{color:#666;font-size:0.85rem}table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{border-bottom:1px solid #eee;padding:8px;text-align:left}.r{text-align:right}</style></head><body>
-<p class="muted">UnBoxIO · ${esc(seller.name ?? '')} (${esc(seller.code ?? '')})</p>
+<p class="muted">ScentsOfWax · ${esc(seller.name ?? '')} (${esc(seller.code ?? '')})</p>
 <h1>Order ${esc(order.orderNumber)}</h1>
 <p class="muted">Status: ${esc(order.status)} · Payment: ${esc(String(order.onlinePaymentStatus ?? '—'))}</p>
 <table><thead><tr><th>Item</th><th>Qty</th><th class="r">Unit</th><th class="r">Subtotal</th><th class="r">GST</th></tr></thead><tbody>${rows}</tbody></table>
